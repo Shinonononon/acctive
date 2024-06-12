@@ -62,6 +62,8 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
     bindex (0.8.1)
     builder (3.2.4)
     byebug (11.1.3)
@@ -77,6 +79,7 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.3.1)
     crass (1.0.6)
+    csv (3.3.0)
     database_cleaner (2.0.2)
       database_cleaner-active_record (>= 2, < 3)
     database_cleaner-active_record (2.1.0)
@@ -126,6 +129,7 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.23.1)
+    mutex_m (0.2.0)
     net-imap (0.4.12)
       date
       net-protocol
@@ -299,13 +303,17 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  base64
+  bigdecimal
   byebug
   capybara (>= 2.15)
+  csv
   database_cleaner
   factory_bot_rails
   faker
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+  mutex_m
   pg (>= 0.18, < 2.0)
   pry-rails
   puma (~> 4.1)
